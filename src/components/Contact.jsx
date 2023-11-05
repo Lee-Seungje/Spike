@@ -19,7 +19,7 @@ const Contact = ({ goNext, goPrev }) => {
           className="standard:w-5/12 ease-in-out duration-200	hover:bg-blue-600 mb-12 bg-blue-500 w-60 rounded-xl h-14 text-xl "
           onClick={goPrev}
         >
-          이전.
+          이전
         </button>
         <button
           className="standard:w-5/12 ease-in-out duration-200	hover:bg-blue-600 mb-12 bg-blue-500 w-60 rounded-xl h-14 text-xl "
