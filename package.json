@@ -19,7 +19,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "vercel-build": "npm run prepare && next build"
   },
   "browserslist": {
     "production": [
