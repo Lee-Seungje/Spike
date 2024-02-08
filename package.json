@@ -17,10 +17,10 @@
     "zustand": "^4.4.5"
   },
   "scripts": {
+    "vercel-build": "pnpm run prepare && next build",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "vercel-build": "npm run prepare && next build"
+    "start": "next start"
   },
   "browserslist": {
     "production": [
