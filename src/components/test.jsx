@@ -36,7 +36,12 @@ const Test = () => {
       <div className="flex">
         <Webcam audio={false} ref={webcamRef} screenshotFormat="image/jpeg" />
         {imgUrl.map((image, i) => (
-          <img width={String(400 + i * 150) + "px"} src={image} key={image} />
+          <img
+            className="grayscale"
+            width={String(400 + i * 150) + "px"}
+            src={image}
+            key={image}
+          />
         ))}
       </div>
       <button
