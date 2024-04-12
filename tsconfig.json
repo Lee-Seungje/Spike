@@ -26,7 +26,8 @@
     "**/*.ts",
     "**/*.tsx",
     "src/components/api.jsx",
-    "next.config.js"
+    "next.config.js",
+    "src/components/test.jsx"
   ],
   "exclude": ["node_modules"]
 }

@@ -38,9 +38,9 @@ const CameraCapture = ({ goNext, setFaces, goPrev, imgUrl, setImgUrl }) => {
   }, [image]);
 
   return (
-    <div className="relative flex items-center flex-col">
-      <div className="w-custom absolute flex items-center flex-col">
-        <span className="text-3xl font-semibold mt-2">
+    <div className="relative flex flex-col items-center">
+      <div className="absolute flex flex-col items-center w-custom">
+        <span className="mt-2 text-3xl font-semibold">
           윤곽선에 얼굴을 맞춰주세요
         </span>
         <Image
@@ -53,21 +53,21 @@ const CameraCapture = ({ goNext, setFaces, goPrev, imgUrl, setImgUrl }) => {
       </div>
       <Webcam audio={false} ref={webcamRef} screenshotFormat="image/jpeg" />
       <button
-        className="ease-in-out duration-200	hover:bg-blue-600 bg-blue-500 w-custom h-14 text-xl absolute bottom-28 rounded-xl"
+        className="absolute text-xl duration-200 ease-in-out bg-blue-500 hover:bg-blue-600 w-custom h-14 bottom-28 rounded-xl"
         onClick={capture}
       >
         사진 찍기
       </button>
       {imgUrl.length > 0 && <img src={imgUrl} />}
-      <div className="absolute bottom-2 flex w-custom justify-between	">
+      <div className="absolute flex justify-between bottom-2 w-custom ">
         <button
-          className="ease-in-out duration-200	hover:bg-blue-600 mb-8 bg-blue-500 w-60 rounded-xl h-14 text-xl "
+          className="mb-8 text-xl duration-200 ease-in-out bg-blue-500 hover:bg-blue-600 w-60 rounded-xl h-14 "
           onClick={goPrev}
         >
           이전
         </button>
         <button
-          className="ease-in-out duration-200	hover:bg-blue-600 mb-8 bg-blue-500 w-60 rounded-xl h-14 text-xl "
+          className="mb-8 text-xl duration-200 ease-in-out bg-blue-500 hover:bg-blue-600 w-60 rounded-xl h-14 "
           onClick={() => {
             postPersonImage();
             goNext();
